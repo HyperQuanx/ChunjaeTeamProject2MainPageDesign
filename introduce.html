@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NamuSam</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="/public/nanusamCircleLogo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <header class="center">
+      <div class="navTop">
+        <div>
+          <a href="#">
+            <img src="/public/nanusamLogo.png" class="mainLogo" />
+          </a>
+        </div>
+        <div>
+          <div class="navGnb">
+            <a href="#">회사 소개글</a>
+            <a href="#">오시는 길</a>
+            <a href="#">공지사항</a>
+            <a href="#">상품</a>
+            <a href="#">내 상품</a>
+            <a href="#">셀파톡</a>
+          </div>
+        </div>
+        <div class="navSign" style="white-space: nowrap">
+          <a href="#">마이페이지</a>
+          <a href="#">나의 결제내역</a>
+          <a href="/logout">로그아웃</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="line"></div>
+      <div class="mainContainer">
+        <div class="mainContent">
+          <h1 id="title" class="textCenter"></h1>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new TypeIt("#title", {
+          strings: [
+            "최고의 기술로 스트레스 없는",
+            "중고거래를 실현하겠습니다.",
+          ],
+          speed: 150,
+          waitUntilVisible: true,
+          deleteSpeed: 30,
+          loop: true,
+        })
+          .pause(3000)
+          .go();
+      });
+    </script>
+
+    <script>
+      // new TypeIt("#title")
+      //   .pause(1000)
+      //   .delete(7, { delay: 1000 })
+      //   .type("Academy")
+      //   .go();
+      // const type2 = new TypeIt("#title", {
+      //     strings: ["기술로 스트레스 없는", "중고거래를 만듭니다."],
+      //     speed: 70,
+      //     deleteSpeed: 30,
+      //     loop: true, // 두 번째 세트는 무한 반복
+      //   });
+
+      //   type1.go(); // 첫 번째 애니메이션 시작
+    </script>
+
+    <footer class="footerContainer">
+      <div class="footerContent">
+        <img src="/public/nanusamLogo.png" alt="로고" id="footerLogo" />
+        <div>
+          <p class="footerLink">
+            <a href="#" style="padding-left: 0px">회사소개</a> |
+            <a href="#">회원약관</a> | <a href="#">개인정보처리방침</a> |
+            <a href="#">이메일수집거부</a> | <a href="#">고객센터</a> |
+            <a
+              href="https://github.com/ChunjaeKerningCity/nanusam"
+              target="_blank"
+              >개발자 Repository</a
+            >
+          </p>
+          <p class="developerList">
+            (주)나누쌤 개발자 :
+            <a href="https://github.com/kangkamchan" target="_blank">강감찬</a>,
+            <a href="https://github.com/qoiol" target="_blank">공미경</a>,
+            <a href="https://github.com/wonheeLee95" target="_blank">이원희</a>,
+            <a href="https://github.com/sxxzxn" target="_blank">조수진</a>,
+            <a href="https://github.com/HyperQuanx" target="_blank">한덕용</a>
+            | 사업자등록번호 : 119-81-70643 | 부가통신사업 신고 번호 : 016590
+          </p>
+          <p>
+            통신판매신고서 : 제2016-서울금천-1306호 | 주소 : 서울특별시 금천구
+            디지털로9길 23 11층 (가산동) | 대표번호 : 1661-0901
+          </p>
+          <p style="color: rgb(153, 153, 153)">
+            Copyright © TeacherOfDivision Corp. All Rights Reserved
+          </p>
+        </div>
+        <img src="/public/footerRight.png" alt="가맹문의" />
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
